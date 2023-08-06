@@ -1,4 +1,4 @@
-package br.com.jbeniz.domain;
+package br.com.jbeniz.projetocadastroclienteswing.domain;
 
 import java.util.Objects;
 
@@ -67,14 +67,8 @@ public class Cliente {
     @Override
     public String toString() {
         return "Cliente: " +
-                "Nome: " + getNome() + '\'' +
-                "CPF: " + getCpf() + '\'' +
-                "Telefone: " + getTel() + '\'' +
-                "Endereço: " + getEnd() + '\'' +
-                "Número: " + getNumero() + '\'' +
-                "Cidade: " + getCidade() + '\'' +
-                "Estado: " + getEstado() + '\'' ;
-
+                "nome='" + nome + '\'' +
+                ", cpf=" + cpf;
     }
 
 

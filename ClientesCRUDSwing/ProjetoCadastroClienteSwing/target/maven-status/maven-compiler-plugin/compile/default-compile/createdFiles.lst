@@ -1,0 +1,4 @@
+br\com\jbeniz\projetocadastroclienteswing\domain\Cliente.class
+br\com\jbeniz\projetocadastroclienteswing\ProjetoCadastroClienteSwing.class
+br\com\jbeniz\projetocadastroclienteswing\DAO\IClienteDAO.class
+br\com\jbeniz\projetocadastroclienteswing\DAO\ClienteSetDAO.class

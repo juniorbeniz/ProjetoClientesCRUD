@@ -1,4 +1,5 @@
 import br.com.jbeniz.dao.ClienteMapDAO;
+import br.com.jbeniz.dao.ClienteSetDAO;
 import br.com.jbeniz.dao.IClienteDAO;
 import br.com.jbeniz.domain.Cliente;
 
@@ -9,7 +10,7 @@ public class App {
 
     private static IClienteDAO iClienteDAO;
     public static void main (String [] args){
-        iClienteDAO = new ClienteMapDAO();
+        iClienteDAO = new ClienteSetDAO();
 
         String opcao = JOptionPane.showInputDialog(null, "Digite 1 para cadastro, " +
                         "2 para consultar, 3 para exclusão, 4 para alteração ou 5 para sair",
@@ -29,7 +30,7 @@ public class App {
             if (isOpcaoSair(opcao)) {
                 sair();
             } else if (isOpcaoCadastro(opcao)) {
-                dados = JOptionPane.showInputDialog(null, "Digite os dados do novo cliente separados" +
+                dados = JOptionPane.showInputDialog(null, "Digite os dados do novo cliente separados " +
                                 "por vírgula. Caso queria deixar algum campo vazio deixe um espaço " +
                                 "em branco entre as vírgulas Ex:(Nome, CPF, Telefone, Endereço, Número, Cidade, Estado",
                         "Cadastro", JOptionPane.INFORMATION_MESSAGE);

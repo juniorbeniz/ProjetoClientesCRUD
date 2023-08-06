@@ -1,7 +1,6 @@
-package br.com.jbeniz.dao;
+package br.com.jbeniz.projetocadastroclienteswing.DAO;
 
-import br.com.jbeniz.domain.Cliente;
-
+import br.com.jbeniz.projetocadastroclienteswing.domain.Cliente;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
@@ -29,6 +28,7 @@ public class ClienteMapDAO implements IClienteDAO{
         if(clienteCadastrado != null){
             this.map.remove(clienteCadastrado.getCpf(), clienteCadastrado);
         }
+
         return clienteCadastrado;
     }
 

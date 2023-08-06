@@ -1,11 +1,14 @@
-package br.com.jbeniz.dao;
+package br.com.jbeniz.projetocadastroclienteswing.DAO;
 
-import br.com.jbeniz.domain.Cliente;
+
+import br.com.jbeniz.projetocadastroclienteswing.domain.Cliente;
 import java.util.*;
 import java.util.Iterator;
 
-public class ClienteSetDAO implements IClienteDAO{
 
+public class ClienteSetDAO implements IClienteDAO {
+    
+    
     private Set<Cliente> set;
 
     public ClienteSetDAO () { this.set = new HashSet<>(); }
@@ -70,4 +73,5 @@ public class ClienteSetDAO implements IClienteDAO{
 
 
 
+    
 }
